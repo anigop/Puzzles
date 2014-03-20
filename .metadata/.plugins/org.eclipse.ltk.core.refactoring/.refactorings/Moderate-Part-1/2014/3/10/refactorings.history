@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Rename local variable &apos;remaining&apos; in &apos;secondattempts.mcoins.mincoins(...)&apos; to &apos;reminder&apos;&#x0A;- Original project: &apos;Moderate-Part-1&apos;&#x0A;- Original element: &apos;secondattempts.mcoins.mincoins(String).remaining&apos;&#x0A;- Renamed element: &apos;remaining&apos;&#x0A;- Update references to refactored element" description="Rename local variable &apos;remaining&apos;" id="org.eclipse.jdt.ui.rename.local.variable" input="/src&lt;secondattempts{mcoins.java[mcoins~mincoins~QString;@remaining!525!563!529!537!I!0!false" name="reminder" references="true" stamp="1394320050446" version="1.0"/>
-</session>
