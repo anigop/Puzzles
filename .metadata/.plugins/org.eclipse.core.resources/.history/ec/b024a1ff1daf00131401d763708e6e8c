@@ -1,0 +1,22 @@
+import java.util.ArrayList;
+
+
+public class OutputGsonObject {
+
+	
+	private ArrayList<OutputRecord> output;
+	
+	public OutputGsonObject(){
+		output = new ArrayList<OutputRecord>();
+	}
+
+	public ArrayList<OutputRecord> getOutput() {
+		return output;
+	}
+
+	public void setOutput(ArrayList<OutputRecord> output) {
+		this.output = output;
+	}
+	
+	
+}

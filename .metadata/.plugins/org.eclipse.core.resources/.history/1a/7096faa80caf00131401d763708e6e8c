@@ -1,0 +1,31 @@
+import java.util.ArrayList;
+
+
+public class OutputRecord {
+
+	private int id;
+	//private int[] top3 = new int[3];
+	private ArrayList<Integer> top3;
+	
+	public OutputRecord(){
+		top3 = new ArrayList<Integer>();
+	}
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public ArrayList<Integer> getTop3() {
+		return top3;
+	}
+
+	public void setTop3(ArrayList<Integer> top3) {
+		this.top3 = top3;
+	}
+	
+	
+}

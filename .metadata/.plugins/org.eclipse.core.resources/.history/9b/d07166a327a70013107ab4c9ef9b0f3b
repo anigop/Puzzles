@@ -1,0 +1,37 @@
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.util.ArrayList;
+
+
+public class UglyNumbers {
+
+	static ArrayList<String> sequences = new ArrayList<String>();
+public static void readFromFile(String filename){
+		
+		try{
+			BufferedReader br = new BufferedReader(new FileReader(filename));
+			String line = null;
+			
+			while((line = br.readLine()) != null){
+				countUgly(line);
+			}
+		}catch(Exception e){
+			e.printStackTrace();
+		}
+	}
+	
+
+	public static void countUgly(String line){
+		
+		
+	}
+	
+	public static void sequences(){
+		
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

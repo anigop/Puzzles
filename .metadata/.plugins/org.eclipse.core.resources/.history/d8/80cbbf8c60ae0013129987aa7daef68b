@@ -1,0 +1,12 @@
+
+public class OutputRecord {
+
+	private int id;
+	private int[] top3 = new int[3];
+	
+	public OutputRecord(){
+		top3 = new int[3];
+	}
+	
+	
+}

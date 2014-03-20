@@ -1,0 +1,18 @@
+package tests;
+
+import org.junit.Test;
+
+
+public class HeapTest {
+
+
+
+public static void checkheapcomp(){
+	
+	
+	ComputeMaxCorrelation.start("test");
+	
+}
+
+	
+}

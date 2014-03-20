@@ -1,0 +1,16 @@
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		if(args.length == 0){
+			ComputeMaxCorrelation.start("inputs-large.json");
+			
+		}else{
+			System.out.println("Enter a valid input filename");
+		}
+		
+	}
+
+}

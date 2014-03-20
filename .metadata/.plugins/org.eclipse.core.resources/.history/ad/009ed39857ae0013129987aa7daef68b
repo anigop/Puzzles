@@ -1,0 +1,15 @@
+import java.util.ArrayList;
+
+
+public class Node {
+
+	
+	private int id;
+	private ArrayList<Node> ingress;
+	private ArrayList<Node> egress;
+	
+	public Node(){
+		ingress = new ArrayList<Node>();
+		egress = new ArrayList<Node>();
+	}
+}

@@ -1,0 +1,11 @@
+import java.util.HashMap;
+
+
+public class Graph {
+
+	private HashMap<Integer,Node> graph;
+	
+	public Graph(){
+		graph = new HashMap<Integer,Node>();
+	}
+}

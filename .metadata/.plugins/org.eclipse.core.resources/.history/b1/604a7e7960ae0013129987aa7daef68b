@@ -1,0 +1,6 @@
+
+public class OutputRecord {
+
+	private int id;
+	private int[] top3 = new int[2];
+}

@@ -1,0 +1,28 @@
+
+public class OutputRecord {
+
+	private int id;
+	private int[] top3 = new int[3];
+	
+	public OutputRecord(){
+		top3 = new int[3];
+	}
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public int[] getTop3() {
+		return top3;
+	}
+
+	public void setTop3(int[] top3) {
+		this.top3 = top3;
+	}
+	
+	
+}

@@ -1,0 +1,14 @@
+import java.math.BigInteger;
+
+
+public class GsonTest {
+
+	
+	public static void main(String[] args){
+		
+		
+		BigIntClass b = new BigIntClass();
+		
+		b.id = new BigInteger("92321263758953");
+	}
+}

@@ -1,0 +1,61 @@
+import java.util.ArrayList;
+import java.util.HashMap;
+
+
+public class Graph {
+
+	private HashMap<Integer,Node> graph;
+	
+	public Graph(){
+		graph = new HashMap<Integer,Node>();
+	}
+	
+	
+	public HashMap<Integer, Node> getGraph() {
+		return graph;
+	}
+
+
+	public void setGraph(HashMap<Integer, Node> graph) {
+		this.graph = graph;
+	}
+
+
+	public void buildGraph(GsonObject g){
+		ArrayList<Record> records = g.getInput();
+
+		for(Record r : records){
+			if(graph.get(r.getId()) == null){
+				Node n = new Node();
+				n.setId(r.getId());
+				graph.put(r.getId(), n);
+				System.out.println("putted "+r.getId()+"    with obj "+n.getId());
+			}
+			
+			Node n = graph.get(r.getId());
+			
+			for(int i : r.getFollowers()){
+				if(graph.get(i) == null){
+					Node d = new Node();
+					d.setId(i);
+					graph.put(i, d);
+				}
+				
+				Node d = graph.get(i);
+				d.getEgress().add(n);
+				n.getIngress().add(d);
+			}
+		}
+		
+		
+		for(int i : graph.keySet()){
+			System.out.println(i+"  -  "+graph.get(i).getId());
+			
+			
+			ArrayList<Node> in = graph.get(i).getIngress();
+			ArrayList<Node> out = graph.get(i).getEgress();
+			
+			
+		}
+	}
+}

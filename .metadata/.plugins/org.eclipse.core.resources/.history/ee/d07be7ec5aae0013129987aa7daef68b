@@ -1,0 +1,29 @@
+import java.util.ArrayList;
+
+
+public class Record {
+
+	private int id;
+	private ArrayList<String> followers;
+	
+	public Record(){
+		followers = new ArrayList<String>();
+	}
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public ArrayList<String> getFollowers() {
+		return followers;
+	}
+
+	public void setFollowers(ArrayList<String> followers) {
+		this.followers = followers;
+	}
+	
+}

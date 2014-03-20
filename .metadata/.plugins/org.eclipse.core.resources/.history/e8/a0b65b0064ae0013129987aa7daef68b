@@ -1,0 +1,25 @@
+import java.io.BufferedReader;
+import java.io.Reader;
+
+public class FileReader {
+
+	public void readFromFile(String filename){
+		
+		try{
+
+			FileReader in = new FileReader(filename);
+			BufferedReader br = new BufferedReader(new FileReader(filename));
+			String line = null;
+			String jsonString = "";
+			
+			while((line = br.readLine()) != null){
+				jsonString += line;
+			}
+			
+			
+		}catch(Exception e){
+			e.printStackTrace();
+		}
+	}
+	
+}
