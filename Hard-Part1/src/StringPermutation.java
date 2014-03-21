@@ -59,8 +59,8 @@ public static void readFromFile(String filename){
 	}
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		//readFromFile(args[0]);
-		perms("hat");
+		readFromFile(args[0]);
+		
 	}
 
 }
